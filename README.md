@@ -1,16 +1,32 @@
-# Alina Dang — Portfolio
+# Alina Dang — Personal Portfolio
 
-Static, responsive portfolio for Alina Dang.
+Welcome to my personal portfolio! I'm Alina Dang, a Computer Science and Economics student at Duke University interested in the intersection of technology, product, AI, and business.
 
-## Run locally
+This site highlights my experience, projects, campus involvement, and the work I've done across product management, software engineering, AI/ML, and business analysis.
 
-Open `index.html` in a browser, or serve the folder with any static file server.
+## About the Site
 
-## Customize
+The portfolio is a responsive, interactive website built with HTML, CSS, and JavaScript. It includes:
 
-- `index.html` contains the page structure and content.
-- `style.css` contains the visual system and responsive styling.
-- `script.js` contains the experience data, tab routing, filters, and playful cursor interactions.
-- `headshot.png` is the profile image.
+- Professional experience and projects
+- Duke University activities and involvement
+- Interactive experience filters
+- Light and dark modes
+- Responsive design for desktop and mobile
+- Custom cursor and interactive visual effects
 
-The site uses a blue-forward palette with several blue shades. Light mode is the default, with a dark-mode toggle and a few playful interactive effects.
+## Tech
+
+- HTML
+- CSS
+- JavaScript
+
+## Connect
+
+- **LinkedIn:** [linkedin.com/in/alina-dang-8358692a6](https://www.linkedin.com/in/alina-dang-8358692a6/)
+- **GitHub:** [github.com/alinadang](https://github.com/alinadang)
+- **Email:** [alina.dang@duke.edu](mailto:alina.dang@duke.edu)
+
+## Live Site
+
+🌐 [alinadang.github.io](https://alinadang.github.io)
