@@ -1,0 +1,205 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Alina Dang — Duke CS + Economics student interested in product management, AI, software engineering, and business analysis." />
+  <title>Alina Dang — CS × Economics</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <header class="topbar">
+      <a class="brand" href="#home" data-route="home" aria-label="Alina Dang home">
+        <span class="brand-mark">AD</span>
+        <span>Alina Dang</span>
+      </a>
+      <nav class="main-nav" aria-label="Primary navigation">
+        <button data-route="home" class="nav-item active">Home</button>
+        <button data-route="experience" class="nav-item">Experience</button>
+        <button data-route="work" class="nav-item">Work</button>
+        <button data-route="campus" class="nav-item">Campus</button>
+        <button data-route="about" class="nav-item">About</button>
+      </nav>
+      <a class="nav-contact" href="#contact">Let’s talk <span>↗</span></a>
+    </header>
+
+    <main>
+      <section id="home" class="page active-page">
+        <div class="hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow"><span class="live-dot"></span> JUNIOR · DUKE UNIVERSITY · CLASS OF 2028</p>
+            <div class="hero-name">Alina Dang</div>
+            <div class="hero-major">B.S. Computer Science + B.S. Economics</div>
+            <h1>Building at the intersection of <span class="accent-underline">technology</span>, data & people.</h1>
+            <p class="hero-lede">I’m Alina — a junior at Duke who likes turning messy problems into useful products, clear decisions, and things people actually enjoy using.</p>
+            <div class="hero-actions">
+              <button class="primary-btn" data-route="experience">Explore my experience <span>→</span></button>
+              <a class="secondary-btn" href="https://www.linkedin.com/in/alina-dang-8358692a6/" target="_blank" rel="noreferrer">LinkedIn <span>↗</span></a>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="headshot-card">
+              <div class="headshot-frame">
+                <img class="headshot-image" src="headshot.png" alt="Alina Dang" />
+              </div>
+              <div class="headshot-caption">
+                <span>Currently at Duke</span>
+                <span class="location-chip">Durham, NC</span>
+              </div>
+              <div class="sticky-note note-one">product ↓</div>
+              <div class="sticky-note note-two">AI + data</div>
+              <div class="sticky-note note-three">ship it ✦</div>
+            </div>
+            <div class="orbit-card">
+              <div class="orbit-title">What I’m into</div>
+              <div class="orbit-tags">
+                <button data-filter="pm">Product</button>
+                <button data-filter="ai">AI</button>
+                <button data-filter="swe">Software</button>
+                <button data-filter="ba">Business</button>
+              </div>
+              <p>Select a lane — the site will highlight related work.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="incoming-strip"><span>INCOMING SUMMER 2027</span><strong>Capital One · Product Management &amp; Analytics Intern</strong><span class="incoming-arrow">→</span></div>
+
+        <div class="marquee" aria-label="Focus areas">
+          <div>PRODUCT MANAGEMENT <span>✦</span> AI / ML <span>✦</span> SOFTWARE ENGINEERING <span>✦</span> BUSINESS ANALYSIS <span>✦</span> DATA <span>✦</span></div>
+        </div>
+
+        <div class="home-lower">
+          <article class="feature-card large">
+            <div class="card-kicker">01 · Featured</div>
+            <h2>From model → dashboard → decision.</h2>
+            <p>At Duke Undergraduate Admissions, I worked across product and ML to turn admissions data into a prediction tool and interactive “what-if” analysis experience.</p>
+            <button data-route="experience" class="text-link">See the story <span>↗</span></button>
+          </article>
+          <article class="feature-card accent-card">
+            <div class="card-kicker">02 · Build mindset</div>
+            <h2>Technical enough to build. Product-minded enough to ask why.</h2>
+            <div class="skill-pill-row">
+              <span>Python</span><span>SQL</span><span>React</span><span>RAG</span><span>Tableau</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="page">
+        <div class="section-header">
+          <p class="eyebrow">Experience</p>
+          <h2>A timeline of building, learning, and shipping.</h2>
+          <p>Tap a role to expand the details. The cards emphasize the product, technical, and analytical pieces of each experience.</p>
+        </div>
+        <div class="filter-bar" role="toolbar" aria-label="Experience filter">
+          <button class="filter-btn active" data-exp-filter="all">All</button>
+          <button class="filter-btn" data-exp-filter="pm">Product</button>
+          <button class="filter-btn" data-exp-filter="ai">AI / ML</button>
+          <button class="filter-btn" data-exp-filter="swe">Software</button>
+          <button class="filter-btn" data-exp-filter="ba">Business / Data</button>
+        </div>
+        <div id="experience-list" class="timeline"></div>
+      </section>
+
+      <section id="work" class="page">
+        <div class="section-header split-header">
+          <div>
+            <p class="eyebrow">Selected work</p>
+            <h2>Projects that show how I think.</h2>
+          </div>
+          <p>Not every project needs to be “the next big thing.” I like projects where there’s a real user, a real constraint, or a fun technical problem to solve.</p>
+        </div>
+        <div class="work-grid">
+          <article class="project-card project-blue">
+            <div class="project-top"><span>01</span><span>MAR 2025</span></div>
+            <h3>ReGen</h3>
+            <p class="project-sub">Gamified Sustainable Investment Platform</p>
+            <p>Designed a sustainability-focused investing experience for Gen Z using AI and ESG data APIs, then built the product story, monetization model, and prototype.</p>
+            <div class="project-meta"><span>1st Place · Duke BOW Venture-thon</span><span>AI · Product · Finance</span></div>
+          </article>
+          <article class="project-card project-sky">
+            <div class="project-top"><span>02</span><span>2025</span></div>
+            <h3>Mini-Amazon</h3>
+            <p class="project-sub">Full-Stack E-Commerce Application</p>
+            <p>Built a normalized PostgreSQL backend and REST-style APIs supporting 100k+ records, including atomic checkout, fulfillment logic, search, pagination, and history views.</p>
+            <div class="project-meta"><span>Python · Flask · PostgreSQL</span><span>Software · Databases</span></div>
+          </article>
+          <article class="project-card project-lilac">
+            <div class="project-top"><span>03</span><span>2025–26</span></div>
+            <h3>Research AI Platform</h3>
+            <p class="project-sub">Product + AI for biomedical innovation</p>
+            <p>Helped shape a custom AI platform for researchers, from stakeholder discovery and roadmap definition to an LLM-powered interface, document workflows, and analytical dashboards.</p>
+            <div class="project-meta"><span>RAG · Python · Supabase</span><span>Product Management</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section id="campus" class="page">
+        <div class="section-header">
+          <p class="eyebrow">Beyond the resume</p>
+          <h2>What I’m involved in at Duke.</h2>
+          <p>These are the communities and activities that make up the rest of my Duke experience.</p>
+        </div>
+        <div class="campus-grid">
+          <article class="campus-card featured-campus">
+            <span class="campus-number">01</span>
+            <h3>Club Table Tennis</h3>
+            <p>Vice President · Duke Club Table Tennis</p>
+            <div class="campus-quote">“Competitive, collaborative, and somehow always one more match.”</div>
+          </article>
+          <article class="campus-card"><span class="campus-number">02</span><h3>Product Lab</h3><p>Product thinking, user discovery, and shipping with other builders.</p></article>
+          <article class="campus-card"><span class="campus-number">03</span><h3>Bass Connections</h3><p>Interdisciplinary work connecting research, people, and real-world problems.</p></article>
+          <article class="campus-card"><span class="campus-number">04</span><h3>Duke Business Oriented Women</h3><p>Community, business, entrepreneurship, and professional development.</p></article>
+          <article class="campus-card"><span class="campus-number">05</span><h3>dTech</h3><p>Technology, innovation, and meeting people who like building things.</p></article>
+          <article class="campus-card"><span class="campus-number">06</span><h3>DAML</h3><p>Machine learning, AI, experimentation, and technical community.</p></article>
+        </div>
+      </section>
+
+      <section id="about" class="page">
+        <div class="about-grid">
+          <div>
+            <p class="eyebrow">About</p>
+            <h2>I like problems that are a little bit of everything.</h2>
+            <p class="big-copy">Computer science taught me how to build. Economics taught me how to think about incentives, tradeoffs, and systems. Product work taught me how to connect the two around an actual user.</p>
+            <p>That’s why I keep gravitating toward roles where the problem is ambiguous, the data is messy, and the solution needs both technical depth and product judgment.</p>
+            <p>Right now, I’m especially interested in product management, software engineering, AI, and business analysis.</p>
+          </div>
+          <div class="about-side">
+            <div class="education-card">
+              <span class="card-kicker">Education</span>
+              <h3>Duke University</h3>
+              <p>B.S. Computer Science + B.S. Economics</p>
+              <p class="mono">Expected May 2028 · GPA 3.812 / 4.0</p>
+            </div>
+            <div class="contact-card" id="contact">
+              <span class="card-kicker">Contact</span>
+              <h3>Say hello.</h3>
+              <div class="contact-line"><span>School</span><a href="mailto:alina.dang@duke.edu">alina.dang@duke.edu</a></div>
+              <div class="contact-line"><span>Personal</span><a href="mailto:alinadang06@gmail.com">alinadang06@gmail.com</a></div>
+              <div class="contact-links"><a href="https://www.linkedin.com/in/alina-dang-8358692a6/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="https://github.com/alinadang" target="_blank" rel="noreferrer">GitHub ↗</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-section">
+          <div><p class="eyebrow">Toolkit</p><h3>Things I use</h3></div>
+          <div class="toolkit">
+            <span>Python</span><span>Java</span><span>SQL</span><span>JavaScript</span><span>C</span><span>HTML / CSS</span><span>React</span><span>Next.js</span><span>PyTorch</span><span>scikit-learn</span><span>Hugging Face</span><span>pandas</span><span>PostgreSQL</span><span>Tableau</span><span>Streamlit</span><span>Docker</span><span>Git</span><span>Figma</span>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© 2026 Alina Dang</span>
+      <span>Built with HTML · CSS · JS ✦</span>
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
